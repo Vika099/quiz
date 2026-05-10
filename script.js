@@ -7,6 +7,13 @@ const startScreen = document.querySelector("#start-screen");
 const quizScreen =  document.querySelector("#quiz-screen");
 const resultScreen =  document.querySelector("#result-screen");
 const startBtn =  document.querySelector("#start-btn");
+ 
+ btn.addEventListener('click',  () => {
+  gtag('event', 'click_start_btn');
+  console.log('Дані відправлено!');
+ });
+
+ 
 const restartBtn =  document.querySelector("#restart-btn");
 
 let questionIndex = 0;
